@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+*<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Search Form</title>
+  <title>Send Text via Formspree</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,42 +13,45 @@
       height: 100vh;
       background: #f4f4f4;
     }
-    .search-box {
+
+    .container {
+      text-align: center;
       background: white;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
+
     input[type="text"] {
-      padding: 10px;
       width: 250px;
+      padding: 10px;
       border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 16px;
+      border-radius: 5px;
+      margin-bottom: 15px;
     }
+
     button {
       padding: 10px 20px;
-      border: none;
-      background: #007BFF;
+      background: #4CAF50;
       color: white;
-      font-size: 16px;
-      border-radius: 4px;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
-      margin-left: 8px;
     }
+
     button:hover {
-      background: #0056b3;
+      background: #45a049;
     }
   </style>
 </head>
 <body>
-
-  <div class="search-box">
+  <div class="container">
+    <h2>Type Your Text</h2>
     <form action="https://formspree.io/f/mrbawdrw" method="POST">
-      <input type="text" name="search_query" placeholder="Enter your search term" required>
-      <button type="submit">Submit</button>
+      <input type="text" name="message" placeholder="Type something..." required>
+      <br>
+      <button type="submit">Send</button>
     </form>
   </div>
-
 </body>
-</html>
+</html>*
